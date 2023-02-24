@@ -39,7 +39,7 @@ def num_matches_played():
 match_df = fetch_match_history()
 teams = sorted(list(pd.concat([match_df["home"], match_df["away"]]).unique()), key=str.casefold)
 
-st.title("SoccerTwos Challenge Analytics")
+st.title("🤗 SoccerTwos Challenge Analytics")
 
 team_results = {}
 for i, row in match_df.iterrows():

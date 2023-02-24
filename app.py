@@ -166,7 +166,7 @@ with tab_team:
             marker=dict(color='green')
         )
 
-        fig = go.Figure(data=[win_trace, draw_trace, loss_trace])
+        fig = go.Figure(data=[loss_trace, draw_trace, win_trace])
         fig.update_layout(barmode="stack")
         st.plotly_chart(fig)
 
